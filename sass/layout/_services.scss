@@ -1,0 +1,27 @@
+.services-subtitle {
+    text-align: center;
+    background-color: rgba(47, 48, 58, 0.8);
+    padding-top: 27px;
+    padding-bottom: 27px;
+    color: $title-dark-theme-color;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+}
+.services-img {
+    display: block;
+} 
+
+.services-list {
+    display: flex;
+}
+
+.services-list-item {
+    position: relative;
+}
+
+.services-list-item:not(:last-child) {
+    margin-right: 30px;
+}

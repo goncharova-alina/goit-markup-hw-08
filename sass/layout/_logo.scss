@@ -1,0 +1,9 @@
+.logo-header {
+    @extend %font-for-logo;
+    margin-right: 85px;
+    color: #000000
+}
+.logo-element {
+    @extend %font-for-logo;
+    color: $accent-color;
+}
