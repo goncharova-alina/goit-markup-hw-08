@@ -64,8 +64,15 @@ body {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .backdrop {
@@ -458,7 +465,13 @@ body {
 .header-tel-link {
   color: #757575;
   text-align: center;
-  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 1999px) {
+  .header-mail-link,
+  .header-tel-link {
+    margin-bottom: 13px;
+  }
 }
 
 @media screen and (min-width: 768px) {

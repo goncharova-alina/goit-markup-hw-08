@@ -10,8 +10,14 @@
     padding-top: 25px;
     padding-right: 100px;
     padding-bottom: 25px;
-    padding-left: 100px;
+    padding-left: 100px;   
 }
+@media screen and (max-width: 767px) {
+    .advantages-list-item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
 .icon-antenna::before {
     background-image: url(../images/icon/antenna.svg);
 }
@@ -24,16 +30,26 @@
 .icon-astronaut::before {
     background-image: url(../images/icon/astronaut.svg);
 }
-.advantages .conteiner {
-    display: flex;
-}
-.advantages-list{
-    display: flex;
-}
-.advantages-list-item:not(:last-child){
-    margin-right: 30px;
-}
+
 .advantages-subtitle {
+    text-align: center;
     margin-top: 30px;
     margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+    .advantages-list {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    // .advantages-list-item:not(:last-child){
+    //     margin-right: 30px;
+    // }
+    .advantages-list-item {
+        width: 49%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
 }
