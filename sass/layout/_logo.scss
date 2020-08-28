@@ -1,9 +1,24 @@
 .logo-header {
     @extend %font-for-logo;
-    margin-right: 85px;
-    color: #000000
+    color: #000000;
+
+    @media screen and (min-width: 768px) {
+        margin-right: 88px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        line-height: 1.19;
+        margin-right: 93px;
+        
+    }
 }
 .logo-element {
     @extend %font-for-logo;
     color: $accent-color;
+
+    @media screen and (min-width: 1200px){
+        font-size: 26px;
+        line-height: 1.19;
+    }
 }
