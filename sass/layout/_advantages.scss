@@ -40,16 +40,17 @@
     .advantages-list {
         display: flex;
         flex-wrap: wrap;
-
+        margin: -15px;
     }
-    // .advantages-list-item:not(:last-child){
-    //     margin-right: 30px;
-    // }
     .advantages-list-item {
-        width: 49%;
+        width: calc((100% - 4 * 15px) /2);
+        margin: 15px;
     }
 }
 
 @media screen and (min-width: 1200px) {
-
+    .advantages-list-item {
+        width: calc((100% - 8 * 15px) /4);
+        margin: 15px;
+    }
 }
