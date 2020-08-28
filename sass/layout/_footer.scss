@@ -1,8 +1,29 @@
 .footer {
     background-color: #2F303A;
     text-align: center;
+    .conteiner {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 }
 @media screen and (min-width: 768px) {
+    .conteiner {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .address-wrapper {
+        margin-left: 74px;
+    }
+    .subscribe-wrapper {
+        margin-left: 165px;
+        
+    }
+    .subscribe-input-wrapper {
+        margin: auto;
+    }
+
+}
+@media screen and (min-width: 1200px) {
     .conteiner {
         display: flex;
         align-items: baseline;
@@ -19,6 +40,7 @@
         display: flex; 
     }
 }
+
 
 
 .logo-footer {
