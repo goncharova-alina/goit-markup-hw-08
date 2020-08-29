@@ -1,15 +1,15 @@
 .footer {
     background-color: #2F303A;
     text-align: center;
-    .conteiner {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
-@media screen and (min-width: 768px) {
-    .conteiner {
+@media screen and (min-width: 768px) { 
+
+    .footer-wrapper {
         display: flex;
         flex-wrap: wrap;
+        align-items: baseline;
     }
     .address-wrapper {
         margin-left: 74px;
@@ -19,30 +19,35 @@
         
     }
     .subscribe-input-wrapper {
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 
 }
 @media screen and (min-width: 1200px) {
-    .conteiner {
+    .footer {
+        text-align: left;
+    }
+    .footer-wrapper {
         display: flex;
+        flex-wrap: nowrap;
         align-items: baseline;
-        padding-top: 60px;
-        padding-bottom: 60px;
+    }
+    .address-wrapper {
+        margin-left: 0px;
     }
     .subscribe-wrapper {
         margin-left: 70px;
     }
     .subscribe-input-wrapper {
+        
+        margin-right: 0px;
         margin-left: 93px;
     }
     .subscribe-form {
         display: flex; 
     }
 }
-
-
-
 .logo-footer {
     @extend %font-for-logo;
     color: $title-dark-theme-color;
@@ -72,8 +77,12 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
-.address-wrapper, .subscribe-wrapper  {
+.address-wrapper, 
+.subscribe-wrapper {
     margin-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0px;
+    }
 }
 
 .subscribe-subtitle {
@@ -110,8 +119,6 @@
     width: 20px;
     height: 20px;
 }
-
-
 .subscribe-input-subtitle {
     display: block;
     color: $title-dark-theme-color;
@@ -145,6 +152,13 @@
     font-size: 16px;
     line-height: 1.2;
     }
+    @media screen and (min-width: 768px) {
+        width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+        margin-bottom: 0px;
+    }
 }
 .submit-form-button {
     display: flex;
@@ -163,6 +177,10 @@
     border-radius: 4px;
     margin: auto;
     border: none;
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 12px;
+    }
 }
 .submit-form-button-svg {
     fill: $title-dark-theme-color;

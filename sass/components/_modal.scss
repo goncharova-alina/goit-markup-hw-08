@@ -6,17 +6,29 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     z-index: 100;
+
+    padding: 93px 15px;
+    overflow-y: scroll;
 }
 .modal-form {
-    width: 528px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    width: 100%;
+    
     display: flex;
     flex-direction: column;
     background-color: #fff;
     padding: 40px;
+
+    @media screen and (min-width: 767px) {
+        width: 450px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @media screen and (min-width: 767px) {
+        width: 528px;
+    }
 }
 .modal-form-title {
     font-style: normal;
